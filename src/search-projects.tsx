@@ -41,6 +41,12 @@ export default function SearchProjects() {
           actions={
             <ActionPanel>
               <Action.Push icon={Icon.Eye} title="View Configs" target={<ViewConfigs project={`${project.name}`} />} />
+              <Action.OpenInBrowser
+                icon={Icon.Globe}
+                title="Open in Doppler"
+                url={`https://dashboard.doppler.com/workplace/projects/${project.name}`}
+                shortcut={{ modifiers: ["shift"], key: "return" }}
+              />
             </ActionPanel>
           }
         />
@@ -88,6 +94,12 @@ function ViewConfigs({ project }: { project: string }) {
                       icon={Icon.List}
                       title="View Secrets"
                       target={<ViewSecrets project={project} config={`${config.name}`} />}
+                    />
+                    <Action.OpenInBrowser
+                      icon={Icon.Globe}
+                      title="Open in Doppler"
+                      url={`https://dashboard.doppler.com/workplace/projects/${project}/configs/${config.name}`}
+                      shortcut={{ modifiers: ["shift"], key: "return" }}
                     />
                   </ActionPanel>
                 }

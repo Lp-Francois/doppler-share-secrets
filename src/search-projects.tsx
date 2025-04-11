@@ -24,7 +24,7 @@ export default function SearchProjects() {
       {projects.map((project) => (
         <List.Item
           key={project.id}
-          icon={Icon.Dot}
+          icon={Icon.Folder}
           title={`${project.name}`}
           accessories={[{ date: new Date(project.created_at as string) }]}
           detail={

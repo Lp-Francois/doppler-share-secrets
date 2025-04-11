@@ -184,6 +184,7 @@ function ViewSecrets({ project, config }: { project: string; config: string }) {
                 <ActionPanel>
                   <Action.CopyToClipboard title="Copy Raw Secret" content={secret.raw} />
                   <Action.CopyToClipboard title="Copy Computed Secret" content={secret.computed} />
+                  <Action.CopyToClipboard title="Copy Secret Key" content={key} />
                   <Action.Push
                     icon={Icon.Pencil}
                     title="Update Note"

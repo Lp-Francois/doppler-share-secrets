@@ -8,7 +8,9 @@ import { useState } from "react";
 export default function SearchProjects() {
   const { isLoading, data: projects = [] } = useCachedPromise(
     async () => {
-      const res = await doppler.projects.list();
+      const res = await doppler.projects.list({
+        perPage: 100,
+      });
       return res.projects;
     },
     [],

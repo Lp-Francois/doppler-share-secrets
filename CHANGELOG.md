@@ -5,6 +5,7 @@
 - chore: update project listing to fetch a maximum of 100 projects per request
 - feat: add 'Open in Doppler' action to project and config views
 - chore: change project icon from Dot to Folder in project listing
+- feat: add option to copy secret key
 
 ## [Routine Maintenance] - {PR_MERGE_DATE}
 

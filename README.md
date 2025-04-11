@@ -23,8 +23,3 @@ An extensive walk-through on how to build such an extension can be found on the 
     b. `Click` "Create a personal token" then "Create"
 
     c. `Copy` and `Paste` the token in **Command Preferences**
-
-
-TODO:
-- add open in doppler button fr each page
-- add pagination

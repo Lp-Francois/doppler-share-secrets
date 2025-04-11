@@ -201,7 +201,6 @@ function ViewSecrets({ project, config }: { project: string; config: string }) {
                   <ActionPanel.Section>
                     <Action
                       icon={Icon.Download}
-                      // eslint-disable-next-line @raycast/prefer-title-case
                       title="Download (Copy) Secrets"
                       onAction={() => setDownload(true)}
                       shortcut={{ modifiers: ["cmd"], key: "s" }}
